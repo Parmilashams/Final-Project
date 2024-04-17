@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armin Group Toronto Real Estate</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Fairlawn-Working-File-11-scaled.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 100%;
+        }
+        header img {
+            margin-bottom: -20px;
+        }
+        header h1 {
+            font-size: 36px; 
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #33333300;
+            width: 100%;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.23s ease;
+        }
+        nav ul li a:hover {
+            background-color: #555555f8;
+        }
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.8);
+            margin-top: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 100%;
+            padding: 20px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="tel"],
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Armin Group</h1>
+            <h2>-Toronto Real Estate-</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Property Listing.html">Property Listing</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="mailto:agent@example.com" method="post" enctype="text/plain">
+                <label for="name">Your name*</label>
+                <input type="text" id="name" name="name" required>
+                <label for="last-name">Your last name*</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <label for="email">Your email address*</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Your phone number</label>
+                <input type="tel" id="phone" name="phone">
+                <label for="looking-for">What are you looking for?</label>
+                <select id="looking-for" name="looking-for">
+                    <option value="" disabled selected>Select...</option>
+                    <option value="Buying">Buying</option>
+                    <option value="Selling">Selling</option>
+                    <option value="Renting">Renting</option>
+                    <option value="Investment">Investment</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="property-type">Type of Property</label>
+                <select id="property-type" name="property-type">
+                    <option value="" disabled selected>Select...</option>
+                    <option value="House">House</option>
+                    <option value="Condominium">Condominium</option>
+                </select>
+                <label for="bedrooms">Number of Bedrooms</label>
+                <input type="number" id="bedrooms" name="bedrooms" min="0" step="1">
+                <label for="bathrooms">Number of Bathrooms</label>
+                <input type="number" id="bathrooms" name="bathrooms" min="0" step="1">
+                <label for="price-range">Price Range</label>
+                <input type="text" id="price-range" name="price-range">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Armin Group Toronto Real Estate</p>
+    </footer>
+</body>
+</html>
